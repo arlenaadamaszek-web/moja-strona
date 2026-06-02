@@ -1,9 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+<div class="card">
+            <img src="images/lolitahistory.webp" alt="Lolita History">
+            <h2>Lolita History</h2>
+            <p>TUTAJ WPISZ SWÓJ OPIS</p>
+        </div>
 body {
     background-image: url("images/359d6b6d4ce11edec4f78e3f4cbe8526.jpg.webp");
     background-size: cover;
