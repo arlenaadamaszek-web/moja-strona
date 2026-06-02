@@ -5,6 +5,18 @@
             <p>TUTAJ WPISZ SWÓJ OPIS</p>
         </div>
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff7fb;
+    color: #4a2c40;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
 
 
 header {
