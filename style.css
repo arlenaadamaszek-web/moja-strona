@@ -5,19 +5,21 @@
 }
 
 body {
-    font-family: Georgia, serif;
-    background: #fff7fb;
+    background-color: #fff7fb;
     color: #4a2c40;
+    font-family: Georgia, serif;
+    line-height: 1.6;
 }
 
 header {
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
     background: linear-gradient(
         135deg,
         #ffe4f2,
         #fce4ff
     );
+    border-bottom: 3px solid #f5cde0;
 }
 
 header h1 {
@@ -30,53 +32,71 @@ header p {
 }
 
 .gallery {
-    max-width: 1400px;
-    margin: 40px auto;
+    max-width: 900px;
+    margin: 50px auto;
     padding: 20px;
 
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(300px, 1fr)
-    );
-
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .card {
-    background: white;
+    background-color: white;
     border-radius: 20px;
     overflow: hidden;
 
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
 }
 
 .card img {
     width: 100%;
-    height: 450px;
-    object-fit: cover;
+    height: auto;
+    display: block;
 }
 
 .card h2 {
     text-align: center;
-    margin: 15px 0;
+    padding-top: 20px;
+    font-size: 1.8rem;
 }
 
 .card p {
-    padding: 0 20px 20px;
+    padding: 20px;
     text-align: center;
+    font-size: 1rem;
 }
 
 footer {
     text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-    background: #f8dceb;
+    padding: 30px;
+    background-color: #f8dceb;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Telefony */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .gallery {
+        padding: 10px;
+    }
+
+    .card h2 {
+        font-size: 1.4rem;
+    }
 }
